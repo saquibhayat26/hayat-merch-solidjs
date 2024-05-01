@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Cart from "./pages/Cart";
 import { NotFound } from "./pages/404";
 import Home from "./pages/Home";
+import Product from "./pages/Product";
 
 const root = document.getElementById("root");
 
@@ -25,6 +26,7 @@ render(
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
       <Route path="/cart" component={Cart} />
+      <Route path="/product/:id" component={Product} />
       <Route path="*404" component={NotFound} />
     </Router>
   ),
